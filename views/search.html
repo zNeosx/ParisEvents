@@ -1,0 +1,31 @@
+<h1>Évenements à Paris</h1>
+
+<div class="form">
+  <div class="form__title form__inputs">
+    <label for="title">Titre de l'evenement : </label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      placeholder="Entrer le titre de l'évènement..."
+    />
+  </div>
+  <div class="form__sort form__inputs">
+    <label for="sort">Trier par : </label>
+    <select name="sort" id="sort">
+      <option value="date_start">Date (croissant)</option>
+      <option value="-date_start">Date (décroissant)</option>
+      <option value="title">Titre</option>
+    </select>
+  </div>
+  <input type="submit" value="Rechercher" class="submit__btn" />
+</div>
+<hr />
+<template id="event__template">
+  <div class="event__box">
+    <h6 class="event__title"></h6>
+    <img src="" alt="" class="event__img" />
+  </div>
+</template>
+
+<div class="event__list"></div>
